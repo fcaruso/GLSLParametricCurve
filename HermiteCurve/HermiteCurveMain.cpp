@@ -58,10 +58,10 @@ void initHermiteCurveShader()
 {
 	ShaderInfo shader_info[] =
     {
-        { GL_VERTEX_SHADER, "../src/glsl/v_hermite_curve.glsl" },
-		{ GL_TESS_CONTROL_SHADER, "../src/glsl/tc_hermite_curve.glsl" },
-		{ GL_TESS_EVALUATION_SHADER, "../src/glsl/te_hermite_curve.glsl" },
-        { GL_FRAGMENT_SHADER, "../src/glsl/f_hermite_curve.glsl" },
+        { GL_VERTEX_SHADER, "../src/glsl/hermite_curve.vert" },
+		{ GL_TESS_CONTROL_SHADER, "../src/glsl/hermite_curve.tess" },
+		{ GL_TESS_EVALUATION_SHADER, "../src/glsl/hermite_curve.eval" },
+        { GL_FRAGMENT_SHADER, "../src/glsl/hermite_curve.frag" },
         { GL_NONE, NULL }
     };
 

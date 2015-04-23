@@ -42,9 +42,9 @@ GLuint glsl[ShaderCount];
 
 GLfloat plane_curve_pts[][3] =
 {
-	{ -1.f, -3.f, 0.f },
-	{ 3.f, 4.f, 0.f },
-	{ -1.f, 4.f, 0.f }
+	{ -1.f, -4.f, 0.f },
+	{ 3.f, 3.f, 0.f },
+	{ -1.f, 3.f, 0.f }
 };
 
 
@@ -54,10 +54,10 @@ void initPlaneCurveShader()
 {
 	ShaderInfo shader_info[] =
     {
-        { GL_VERTEX_SHADER, "../src/glsl/v_plane_curve.glsl" },
-		{ GL_TESS_CONTROL_SHADER, "../src/glsl/tc_plane_curve.glsl" },
-		{ GL_TESS_EVALUATION_SHADER, "../src/glsl/te_plane_curve.glsl" },
-        { GL_FRAGMENT_SHADER, "../src/glsl/f_plane_curve.glsl" },
+        { GL_VERTEX_SHADER, "../src/glsl/plane_curve.vert" },
+		{ GL_TESS_CONTROL_SHADER, "../src/glsl/plane_curve.tess" },
+		{ GL_TESS_EVALUATION_SHADER, "../src/glsl/plane_curve.eval" },
+        { GL_FRAGMENT_SHADER, "../src/glsl/plane_curve.frag" },
         { GL_NONE, NULL }
     };
 
