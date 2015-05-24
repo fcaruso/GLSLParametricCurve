@@ -48,8 +48,8 @@ GLfloat control_pt[][3] =
 
 GLfloat tangent_vector[][3] =
 {
-	{ -1.f,   5.0f, 0.f},
-	{ -1.f, 3.f, 0.f}
+	{ -5.f,   5.0f, 0.f},
+	{ -5.f, 5.f, 0.f}
 };
 
 const double WORLD_SIZE = 4.;
