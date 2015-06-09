@@ -6,7 +6,7 @@ uniform mat4  matModelView;
 uniform mat4  matProjection;
 
 ///////////////////////////////////////////////////
-// function to calculate the hermite function value
+// function to evaluate  the Bezier curve
 vec3 bezier(float u, vec3 p0, vec3 p1, vec3 p2, vec3 p3)
 {
 	float B0 = (1.-u)*(1.-u)*(1.-u);
